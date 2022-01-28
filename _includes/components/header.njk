@@ -1,11 +1,17 @@
 <div class="fixed w-full top-0 left-0 z-10 "> 
     <nav class="flex h-16 md:h-20 items-center bg-white dark:bg-gray-900 z-20 fixed top-0 left-0 right-0 border-b border-gray-100 px-0 py-2 dark:bg-dark dark:border-gray-800 transition-colors duration-200">
       <div class="hidden md:block space-y-4 w-full p-4">
-        <a class="no-underline text-gray-600 hover:text-gray-800 font-bold dark:text-gray-500 items-center" href="/">
-          <span class="text-xl">{{ site.name }}</span>
-          {% if site.subtitle %}
+        <a class="no-underline text-gray-600 hover:text-gray-800 font-bold dark:text-gray-500 items-center" style="display: flex; flex-direction: row" href="/">
+          <div class="aerlytix-logo">
+            <svg width="50" height="45" viewBox="0 0 599 427" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M89.6338 52.4143C73.5464 30.7396 89.0276 0 116.031 0H256.947C292.625 0 326.196 16.8861 347.452 45.5241L591.687 374.585C607.774 396.26 592.293 426.999 565.29 426.999H424.374C388.695 426.999 355.125 410.113 333.869 381.475L89.6338 52.4143Z" fill="#2B5DC1"/>
+              <path d="M140.567 198.412C145.849 190.825 157.008 190.634 162.546 198.035L277.109 351.131C300.518 382.414 278.195 427 239.122 427H20.3685C3.94252 427 -5.70409 408.531 3.68062 395.05L140.567 198.412Z" fill="#2B5DC1"/>
+            </svg>
+          </div>
+          <span class="text-xl pl-2">{{ site.name }}</span>
+          {# {% if site.subtitle %}
           <span class="block mt-1 text-sm text-gray-500 hover:text-gray-600 dark:text-gray-600 font-normal text-xs sm:text-xs md:text-sm lg:text-sm w-full"> {{ site.subtitle }}</span>
-          {% endif %}
+          {% endif %} #}
          </a>
       </div>
       <div class="mr-2 relative w-full md:w-64">

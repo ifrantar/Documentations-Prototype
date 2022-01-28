@@ -204,6 +204,7 @@ Correct the inability to style clickable types in iOS and Safari.
 
 button,
 [type='button'],
+[type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
 }
@@ -565,8 +566,11 @@ video {
       [type='text'],
       [type='email'],
       [type='password'],
+      [type='date'],
+      [type='month'],
       [type='search'],
       [type='time'],
+      [multiple],
       textarea,
       select
      {
@@ -585,7 +589,7 @@ video {
   line-height: 1.5rem;
 }
 
-[type='text']:focus, [type='email']:focus, [type='password']:focus, [type='search']:focus, [type='time']:focus, textarea:focus, select:focus {
+[type='text']:focus, [type='email']:focus, [type='password']:focus, [type='date']:focus, [type='month']:focus, [type='search']:focus, [type='time']:focus, [multiple]:focus, textarea:focus, select:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
@@ -629,6 +633,16 @@ select {
   padding-right: 2.5rem;
   -webkit-print-color-adjust: exact;
           color-adjust: exact;
+}
+
+[multiple] {
+  background-image: initial;
+  background-position: initial;
+  background-repeat: unset;
+  background-size: initial;
+  padding-right: 0.75rem;
+  -webkit-print-color-adjust: unset;
+          color-adjust: unset;
 }
 
 /* Set up some default image behavior for nicer images */
@@ -702,6 +716,24 @@ blockquote {
 
 blockquote {
   padding: 1rem;
+}
+
+.callout-blue {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 246, 255, var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.dark .callout-blue, .dark .callout-blue strong, .dark .callout-blue em {
+  --tw-bg-opacity: 1;
+  background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(229, 231, 235, var(--tw-text-opacity));
 }
 
 /* Overrides for nav/Table of Contents block */
@@ -1126,6 +1158,11 @@ nav ul li a.active {
   margin-bottom: 0;
 }
 
+.prose .prose a.edit {
+  color: #333;
+  text-decoration: none;
+}
+
 .prose ul.footer-nav ::before {
   display: none;
   text-decoration: none;
@@ -1481,6 +1518,10 @@ nav ul li a.active {
   margin-left: 0px !important;
 }
 
+.ml-1 {
+  margin-left: 0.25rem !important;
+}
+
 .ml-2 {
   margin-left: 0.5rem !important;
 }
@@ -1491,6 +1532,10 @@ nav ul li a.active {
 
 .inline-block {
   display: inline-block !important;
+}
+
+.inline {
+  display: inline !important;
 }
 
 .flex {
@@ -1549,6 +1594,10 @@ nav ul li a.active {
   flex: none !important;
 }
 
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
 .flex-grow {
   flex-grow: 1 !important;
 }
@@ -1562,6 +1611,10 @@ nav ul li a.active {
   --tw-scale-x: 1 !important;
   --tw-scale-y: 1 !important;
   transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg !important;
 }
 
 @-webkit-keyframes spin {
@@ -1886,6 +1939,10 @@ nav ul li a.active {
   padding-left: 0px !important;
 }
 
+.pl-2 {
+  padding-left: 0.5rem !important;
+}
+
 .pl-3 {
   padding-left: 0.75rem !important;
 }
@@ -1975,6 +2032,11 @@ nav ul li a.active {
 .hover\:text-gray-800:hover {
   --tw-text-opacity: 1 !important;
   color: rgba(31, 41, 55, var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-gray-900:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgba(17, 24, 39, var(--tw-text-opacity)) !important;
 }
 
 .hover\:text-yellow-400:hover {
