@@ -8,7 +8,7 @@ eleventyNavigation:
   title: Pricing an aircraft
 ---
 
-## Step 1: Searching and Aircraft
+## Step 1: Searching an Aircraft
 
 The Analytics Suite facilitates the trading and pricing analysis of aircraft across the global fleet of commercial aircraft. This is made possible through the application of Aergo Capital underwriting assumptions for engine, airframe and part costing and scheduling to aircraft types and engine sub-types that are defined in the global fleet.
 
