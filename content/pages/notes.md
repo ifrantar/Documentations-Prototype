@@ -13,7 +13,6 @@ The benefits of providing documentation and training guides to our clients via a
 * It's aligned with the medium and nature of the product we are offering to our clients.
 * It's cost and time effective as there always be one version and less effort to update.
 * We can change it on real-time and if sections are commonly shared across clients, one change could be instant on all instances.
-* For a software company that brings simplicity, this is better than the excel-like-old-school of emailing pdfs a million times if there are typos, changes or any type of updates. In other words, a static document is no different than sending like in the early 90's a CD with a Software installation.
 * It's resonsive. Users can read and go through this documentation on their mobile, tablet, etc.
 * We can enrichg these guides with embeded videos ie. walk-through screencasts, link images, webinars, etc or any type of medium available to be published on a web page.
 * It can be incorporated in the application using the same our clients have for the app.
