@@ -4,7 +4,7 @@ date: Last Modified
 permalink: /notes/
 eleventyNavigation:
   key: Notes 
-  order: 60
+  order: 70
   title: Notes
 ---
 
