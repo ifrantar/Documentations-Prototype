@@ -138,7 +138,7 @@ To create a Tech Spec:
 * Once all fields are completed, select “Return to Assembly Snapshots.”
 
 ::: callout-blue
-Note: Users can edit, change the “As of” date, or delete an assembly snapshot using the Actions tooltips in the Snapshot page (Figure 9).
+Note: Users can edit, change the “As of” date, or delete an assembly snapshot using the Actions tooltips in the Snapshot page (Figure 9)..
 :::
 
 ![Hello, world](/content/images/picture-12.png)->_Figure 8: Tech Spec Editor_<-
